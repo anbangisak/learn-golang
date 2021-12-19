@@ -7,6 +7,9 @@ func main(){
     // composite literal; slicing literal
     x := []int{7, 9, 42}
     fmt.Println(x)
+    for i, _ := range x {
+        fmt.Println(i, "-", x[i])
+    }
 
     y := make([]int, 0, 100) // size setting up
     y = append(y, 7)
